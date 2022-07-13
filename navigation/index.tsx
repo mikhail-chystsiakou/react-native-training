@@ -16,8 +16,7 @@ import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
-import TabThreeScreen from '../screens/TabThreeScreen';
-import FlexDirections from '../screens/FlexDirections';
+import FlexDemoScreen from '../screens/FlexDemoScreen/FlexDemoScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -66,7 +65,7 @@ function BottomTabNavigator() {
       }}>
       <BottomTab.Screen
         name="FlexDirections"
-        component={FlexDirections}
+        component={FlexDemoScreen}
         options={{
           title: 'Flex Demo',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
