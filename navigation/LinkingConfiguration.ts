@@ -25,7 +25,7 @@ const linking: LinkingOptions<RootStackParamList> = {
               TabTwoScreen: 'two',
             },
           },
-          TabThree: {
+          FlexDirections: {
             screens: {
               TabTwoScreen: 'three',
             },

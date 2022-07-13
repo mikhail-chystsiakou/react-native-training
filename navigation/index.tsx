@@ -60,11 +60,18 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabThree"
+      initialRouteName="FlexDirections"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
-        
+      <BottomTab.Screen
+        name="FlexDirections"
+        component={FlexDirections}
+        options={{
+          title: 'Flex Demo',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
       <BottomTab.Screen
         name="TabOne"
         component={TabOneScreen}
@@ -92,14 +99,6 @@ function BottomTabNavigator() {
         component={TabTwoScreen}
         options={{
           title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-        }}
-      />
-      <BottomTab.Screen
-        name="TabThree"
-        component={FlexDirections}
-        options={{
-          title: 'Tab Three',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
